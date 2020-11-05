@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+	  xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	  <meta charset="UTF-8">
+<head>
+	<title>Consultar Agendamentos</title>
+</head>
+<body>
+	
+	<div align="center">
+		<h1>Agendamento de Exame</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Id Agendamento </th>
+					<th>Nome </th>
+					<th>Idade </th>
+					<th>E-mail </th>
+					<th>Convênio </th>
+					<th>Nome do Exame </th>
+					<th>Especialidade </th>
+					<th>Data do Exame </th>
+					<th>Médico Solicitante </th>
+					<th>Obs/ Resultado </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="exames : ${listaExames}">
+					<td th:text="${exames.id}" ></td>
+					<td th:text="${exames.nome}" ></td>
+					<td th:text="${exames.idade}" ></td>
+					<td th:text="${exames.email}" ></td>
+					<td th:text="${exames.convenio}" ></td>
+					<td th:text="${exames.medSolicitante}" ></td>
+					<td th:text="${exames.nmExame}" ></td>
+					<td th:text="${exames.dtExame}" ></td>
+					<td th:text="${exames.especialidade}" ></td>
+					<td th:text="${exames.dsResultado}" ></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
