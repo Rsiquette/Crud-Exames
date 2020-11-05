@@ -5,7 +5,10 @@ Crud para cadastro de Exames (soctest)
 
 Alterar configurações de username e password no banco de Dados (no caso MySql) em .aplication.properties
 
+
 spring.datasource.url=jdbc:mysql://localhost:3306/AGENDAR_EXAMES?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+
+
 
 spring.datasource.username=root
 spring.datasource.password=root
